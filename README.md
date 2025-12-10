@@ -1,52 +1,52 @@
-# 🛍️ Mini E-commerce API
+# 🛒 Mini Ecommerce API
 
-Uma API simples para gerenciamento de produtos, desenvolvida com **Node.js**, **Express** e **Sequelize**.  
-Este projeto faz parte do meu processo de estudos e consolidação de conhecimentos sobre backend, criação de CRUDs e integração com banco de dados relacional.
+Uma API simples de ecommerce desenvolvida com **Node.js**, **TypeScript** e **Sequelize**, com foco em aprendizado de backend e construção de um CRUD completo.
+
+Projeto criado com o objetivo de treinar arquitetura de APIs, organização de código e boas práticas.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias utilizadas
 
-- **Node.js**
-- **Express**
-- **TypeScript**
-- **Sequelize**
-- **MySQL** *(ou o banco que você estiver usando)*
-- **Nodemon / ts-node-dev** para desenvolvimento
+- Node.js
+- TypeScript
+- Express
+- Sequelize
+- SQLite
+- Git & GitHub
 
 ---
 
 ## 📦 Funcionalidades
 
-Atualmente, a API permite:
+### 🛍️ Produtos (Products)
+- Criar produto
+- Listar produtos
+- Buscar produto por ID
+- Atualizar produto
+- Deletar produto
 
-### 📌 Produtos
-- Criar um produto
-- Listar todos os produtos
-- Buscar um produto por ID
-- Atualizar um produto
-- Deletar um produto
-
-CRUD completo implementado em `/products`.
+### 🧾 Pedidos (Orders)
+- Criar pedido
+- Listar pedidos
+- Buscar pedido por ID
+- Atualizar status do pedido
+- Deletar pedido
 
 ---
 
-## 🔧 Como rodar o projeto
+## 🔧 Como rodar o projeto localmente
 
 ```bash
 # Clone o repositório
-git clone https://github.com/SEU-USUARIO/mini-ecommerce-node.git
+git clone https://github.com/livia-oliveira/mini-ecommerce.git
 
 # Entre na pasta
-cd mini-ecommerce-node
+cd mini-ecommerce
 
 # Instale as dependências
 npm install
 
-# Configure seu banco de dados no arquivo .env
-
-# Rode as migrations (se tiver)
-npx sequelize db:migrate
-
-# Inicie o servidor
+# Rode o servidor
 npm run dev
+
