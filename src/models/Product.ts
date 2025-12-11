@@ -1,5 +1,5 @@
-import {DataTypes, Model} from 'sequelize';
-import {sequelize} from '../db';
+import { DataTypes, Model } from 'sequelize';
+import { sequelize } from '../db';
 
 export class Product extends Model {
     declare id: number;
@@ -40,3 +40,4 @@ Product.init(
         timestamps: true,
     }
 );
+

@@ -12,6 +12,7 @@ export class Order extends Model{
 Order.init(
     {
         id:{
+            
             type:DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true,
@@ -19,6 +20,7 @@ Order.init(
         total:{
             type:DataTypes.DECIMAL(10,2),
             allowNull:false,
+            defaultValue: 0
         },
         status:{
             type: DataTypes.ENUM("pending", "paid", "shipped", "completed", "cancelled"),
@@ -42,4 +44,4 @@ Order.init(
         tableName: 'orders',
         timestamps: true,
     }
-)
+);

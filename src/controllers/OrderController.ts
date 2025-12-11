@@ -15,10 +15,6 @@ class OrderController{
         try{
             const { total, status } = req.body;
 
-            if(!total){
-                return res.status(400).json({message: "O total é obrigatorio"});
-            }
-
             if(status !== undefined && !VALID_ORDER_STATUS.includes(status)){
                 return res.status(400).json({ message: `Status inválido. Valores permitidos: ${VALID_ORDER_STATUS.join(", ")}`,});
             }
