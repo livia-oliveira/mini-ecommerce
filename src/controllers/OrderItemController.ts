@@ -33,6 +33,15 @@ class OrderItemController{
                 price
             });
 
+            const items = await OrderItem.findAll({ where: { orderId } });
+
+            const newTotal = items.reduce((sum, item) => {
+                return sum + item.quantity * item.price;
+            }, 0);
+
+            order.total = newTotal;
+            await order.save();
+
             return res.status(201).json(item);
         } catch(error){
             console.error(error);
@@ -64,7 +73,24 @@ class OrderItemController{
                 return res.status(404).json({ message: "Item não encontrado" });
             }
 
+            const orderId = item.orderId;
+
             await item.destroy();
+
+            const items = await OrderItem.findAll({ where: { orderId } });
+
+            const newTotal = items.reduce((sum, item) =>{
+                return sum + item.quantity * item.price;
+            }, 0 );
+
+            const order = await Order.findByPk(orderId);
+
+            if(!order){
+                return res.status(404).json({ message: "Pedido não encontrado ao recalcular total" });
+            }
+
+            order.total = newTotal;
+            await order.save();
 
             return res.json({ message: "Item deletado com sucesso" });
         } catch(error){
