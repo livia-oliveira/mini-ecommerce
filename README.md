@@ -1,71 +1,43 @@
-📦 Mini Ecommerce API
+## 📦 Mini Ecommerce API
 
-Uma API backend simples para um mini sistema de ecommerce, desenvolvida com Node.js, TypeScript, Express, Sequelize e SQLite.
-Este projeto tem como foco o aprendizado de fundamentos de backend, operações CRUD e modelagem de dados relacionais.
+API backend para um mini sistema de ecommerce desenvolvida com Node.js, TypeScript, Express e Sequelize.
 
-🚀 Tecnologias
+### 🚀 Tecnologias
+- Node.js
+- TypeScript
+- Express
+- Sequelize
+- SQLite
 
-Node.js
+### 📂 Funcionalidades
 
-TypeScript
+#### Produtos
+- Criar produto
+- Listar produtos
+- Buscar produto por ID
+- Atualizar produto
+- Deletar produto
 
-Express
+#### Pedidos
+- Criar pedido
+- Listar pedidos
+- Atualizar status do pedido
+- Deletar pedido
 
-Sequelize ORM
+#### Itens do Pedido
+- Adicionar item ao pedido
+- Listar itens do pedido
+- Remover item do pedido
+- Cálculo automático do total do pedido
 
-SQLite
+### 🧠 Regras de Negócio
+- O total do pedido é calculado automaticamente com base nos itens
+- O total é recalculado ao adicionar ou remover itens
+- O preço do item é obtido a partir do produto
 
-Git & GitHub
-
-📂 Funcionalidades Implementadas
-✅ Produtos
-
-Criar produto
-
-Listar produtos
-
-Buscar produto por ID
-
-Atualizar produto
-
-Deletar produto
-
-✅ Pedidos (Orders)
-
-Criar pedido
-
-Listar pedidos
-
-Buscar pedido por ID
-
-Atualizar status do pedido
-
-Deletar pedido
-
-✅ Itens do Pedido (Order Items)
-
-Adicionar item a um pedido
-
-Listar itens do pedido
-
-Remover item do pedido
-
-Cálculo automático do total do pedido ao criar ou remover itens
-
-
-
-▶️ Como Executar o Projeto
+### ▶️ Como executar
+```bash
 npm install
 npm run dev
 
-
-O servidor será iniciado em:
-
-http://localhost:3000
-
-
-👩‍💻 Autora
-
-Desenvolvido por Lívia Oliveira
-Projeto de estudo em backend 🚀
 
