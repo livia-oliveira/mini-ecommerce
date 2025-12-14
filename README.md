@@ -1,52 +1,71 @@
-# 🛒 Mini Ecommerce API
+📦 Mini Ecommerce API
 
-Uma API simples de ecommerce desenvolvida com **Node.js**, **TypeScript** e **Sequelize**, com foco em aprendizado de backend e construção de um CRUD completo.
+Uma API backend simples para um mini sistema de ecommerce, desenvolvida com Node.js, TypeScript, Express, Sequelize e SQLite.
+Este projeto tem como foco o aprendizado de fundamentos de backend, operações CRUD e modelagem de dados relacionais.
 
-Projeto criado com o objetivo de treinar arquitetura de APIs, organização de código e boas práticas.
+🚀 Tecnologias
 
----
+Node.js
 
-## 🚀 Tecnologias utilizadas
+TypeScript
 
-- Node.js
-- TypeScript
-- Express
-- Sequelize
-- SQLite
-- Git & GitHub
+Express
 
----
+Sequelize ORM
 
-## 📦 Funcionalidades
+SQLite
 
-### 🛍️ Produtos (Products)
-- Criar produto
-- Listar produtos
-- Buscar produto por ID
-- Atualizar produto
-- Deletar produto
+Git & GitHub
 
-### 🧾 Pedidos (Orders)
-- Criar pedido
-- Listar pedidos
-- Buscar pedido por ID
-- Atualizar status do pedido
-- Deletar pedido
+📂 Funcionalidades Implementadas
+✅ Produtos
 
----
+Criar produto
 
-## 🔧 Como rodar o projeto localmente
+Listar produtos
 
-```bash
-# Clone o repositório
-git clone https://github.com/livia-oliveira/mini-ecommerce.git
+Buscar produto por ID
 
-# Entre na pasta
-cd mini-ecommerce
+Atualizar produto
 
-# Instale as dependências
+Deletar produto
+
+✅ Pedidos (Orders)
+
+Criar pedido
+
+Listar pedidos
+
+Buscar pedido por ID
+
+Atualizar status do pedido
+
+Deletar pedido
+
+✅ Itens do Pedido (Order Items)
+
+Adicionar item a um pedido
+
+Listar itens do pedido
+
+Remover item do pedido
+
+Cálculo automático do total do pedido ao criar ou remover itens
+
+
+
+▶️ Como Executar o Projeto
 npm install
-
-# Rode o servidor
 npm run dev
+
+
+O servidor será iniciado em:
+
+http://localhost:3000
+
+
+👩‍💻 Autora
+
+Desenvolvido por Lívia Oliveira
+Projeto de estudo em backend 🚀
 
